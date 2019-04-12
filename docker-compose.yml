@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    payaramicro: 
+        image: payaramicro:auditoria
+        build: Lector_csv/micropayara/.   
+        container_name: 'ausDemo'       
+        ports:
+        - "8080:8080"
+        - "4848:4848"

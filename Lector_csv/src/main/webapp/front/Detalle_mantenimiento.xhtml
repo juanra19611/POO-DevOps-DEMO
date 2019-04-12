@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">      
+    <h:head>
+        <title>Detalle Mantenimiento</title>
+    </h:head>
+    <h:body>
+        <h:outputLabel  value="Historial">AUDITORIA DE SISTEMAS</h:outputLabel>
+        <h:outputLabel  value="Historial">COLABORADOR: ERICK GUIROLA</h:outputLabel>
+        <h:outputLabel  value="Historial">HISTORIAL DE MANTENIMIENTO</h:outputLabel>
+        <h:outputLabel  value="Historial">PRUEBA DE DATOS</h:outputLabel>
+        <h:form>
+            <p:dataTable style="width: 100%; height: 50%" var="detalle_mantenimiento"  value="#{dtDetalle.lista}"
+                         emptyMessage="No hay ni mix...">
+
+                <p:column >
+                    <f:facet name="header">
+                        <p:outputLabel value="Nombre"/>
+                    </f:facet>
+                    <h:outputText value="#{detalle_mantenimiento.nombre}" />
+                </p:column>
+                <p:column >
+                    <f:facet name="header">
+                        <p:outputLabel value="Apellidos"/>
+                    </f:facet>
+                    <h:outputText value="#{detalle_mantenimiento.apellido}" />
+                </p:column>
+
+                <!--                            <p:column >
+                                                <f:facet name="header">
+                                                    <p:outputLabel value="Id mantnimiento"/>
+                                                </f:facet>
+                                                <h:outputText value="#{null}" />
+                                            </p:column>
+                                
+                                            <p:column headerText="Historico">
+                                                <h:outputText value="#{null}"/>
+                                            </p:column>
+                                
+                                            <p:column headerText="N° inventario">
+                                                <h:outputText value="#{null}"/>
+                                            </p:column>
+                                
+                                            <p:column headerText="marca">
+                                                <h:outputText value="#{null}"/>
+                                            </p:column>
+                                
+                                            <p:column headerText="N° Serie">
+                                                <h:outputText value="#{null}"/>
+                                            </p:column>
+                                
+                                            <p:column headerText="Modelo">
+                                                <h:outputText value="#{null}"/>
+                                            </p:column>
+                                
+                                            <p:column headerText="Responsable">
+                                                <h:outputText value="#{null}"/>
+                                            </p:column>
+                                
+                                            <p:column headerText="Sistema Operativo">
+                                                <h:outputText value="#{null}"/>
+                                            </p:column>
+                                
+                                            <p:column headerText="Version">
+                                                <h:outputText value="#{null}"/>
+                                            </p:column>
+                                
+                                            <p:column headerText="Observaciones">
+                                                <h:outputText value="#{null}"/>
+                                            </p:column>-->
+            </p:dataTable>
+        </h:form>
+    </h:body>
+</html>
+
