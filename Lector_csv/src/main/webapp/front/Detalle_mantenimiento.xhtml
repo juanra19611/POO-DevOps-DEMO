@@ -16,6 +16,22 @@
         <h:outputLabel  value="Historial">HISTORIAL DE MANTENIMIENTO</h:outputLabel>
            <br/>
         <h:outputLabel  value="Historial">PRUEBA DE DATOS</h:outputLabel>
+          
+          <p:button outcome="productDetail" value="Bookmark" icon="pi pi-star" style="margin-right:20px;">
+    <f:param name="productId" value="10" />
+</p:button>
+ 
+<p:button outcome="productDetail" value="With Icon" icon="pi pi-star" style="margin-right:20px;">
+    <f:param name="productId" value="20" />
+</p:button>
+ 
+<p:button outcome="productDetail" icon="pi pi-star" style="margin-right:20px;" title="Icon Only">
+    <f:param name="productId" value="30" />
+</p:button>
+ 
+<p:button outcome="productDetail" value="Bookmark" icon="pi pi-star" disabled="true" style="margin-right:20px;">
+    <f:param name="productId" value="40" />
+</p:button>
         <h:form>
             <p:dataTable style="width: 100%; height: 50%" var="detalle_mantenimiento"  value="#{dtDetalle.lista}"
                          emptyMessage="No hay ni mix...">
