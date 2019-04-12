@@ -7,6 +7,9 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">      
     <h:head>
         <title>Detalle Mantenimiento</title>
+          <STYLE type="text/css">
+  BODY {text-align: center}
+ </STYLE>
     </h:head>
     <h:body>
         <h:outputLabel  value="Historial">PROGRAMCION ORIENTADA A OBJETOS</h:outputLabel>
@@ -16,83 +19,7 @@
         <h:outputLabel  value="Historial">HISTORIAL DE MANTENIMIENTO</h:outputLabel>
            <br/>
         <h:outputLabel  value="Historial">PRUEBA DE DATOS</h:outputLabel>
-          
-          <p:button outcome="productDetail" value="Bookmark" icon="pi pi-star" style="margin-right:20px;">
-    <f:param name="productId" value="10" />
-</p:button>
- 
-<p:button outcome="productDetail" value="With Icon" icon="pi pi-star" style="margin-right:20px;">
-    <f:param name="productId" value="20" />
-</p:button>
- 
-<p:button outcome="productDetail" icon="pi pi-star" style="margin-right:20px;" title="Icon Only">
-    <f:param name="productId" value="30" />
-</p:button>
- 
-<p:button outcome="productDetail" value="Bookmark" icon="pi pi-star" disabled="true" style="margin-right:20px;">
-    <f:param name="productId" value="40" />
-</p:button>
-        <h:form>
-            <p:dataTable style="width: 100%; height: 50%" var="detalle_mantenimiento"  value="#{dtDetalle.lista}"
-                         emptyMessage="No hay ni mix...">
-
-                <p:column >
-                    <f:facet name="header">
-                        <p:outputLabel value="Nombre"/>
-                    </f:facet>
-                    <h:outputText value="#{detalle_mantenimiento.nombre}" />
-                </p:column>
-                <p:column >
-                    <f:facet name="header">
-                        <p:outputLabel value="Apellidos"/>
-                    </f:facet>
-                    <h:outputText value="#{detalle_mantenimiento.apellido}" />
-                </p:column>
-
-                <!--                            <p:column >
-                                                <f:facet name="header">
-                                                    <p:outputLabel value="Id mantnimiento"/>
-                                                </f:facet>
-                                                <h:outputText value="#{null}" />
-                                            </p:column>
-                                
-                                            <p:column headerText="Historico">
-                                                <h:outputText value="#{null}"/>
-                                            </p:column>
-                                
-                                            <p:column headerText="N° inventario">
-                                                <h:outputText value="#{null}"/>
-                                            </p:column>
-                                
-                                            <p:column headerText="marca">
-                                                <h:outputText value="#{null}"/>
-                                            </p:column>
-                                
-                                            <p:column headerText="N° Serie">
-                                                <h:outputText value="#{null}"/>
-                                            </p:column>
-                                
-                                            <p:column headerText="Modelo">
-                                                <h:outputText value="#{null}"/>
-                                            </p:column>
-                                
-                                            <p:column headerText="Responsable">
-                                                <h:outputText value="#{null}"/>
-                                            </p:column>
-                                
-                                            <p:column headerText="Sistema Operativo">
-                                                <h:outputText value="#{null}"/>
-                                            </p:column>
-                                
-                                            <p:column headerText="Version">
-                                                <h:outputText value="#{null}"/>
-                                            </p:column>
-                                
-                                            <p:column headerText="Observaciones">
-                                                <h:outputText value="#{null}"/>
-                                            </p:column>-->
-            </p:dataTable>
-        </h:form>
+         
     </h:body>
 </html>
 
