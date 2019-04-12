@@ -17,7 +17,7 @@
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <configuration>
-                    <dockerHost>http://104.209.41.55:2376</dockerHost>
+                    <dockerHost>https://104.209.41.55:2376</dockerHost>
                     <certPath>/home/ikkiriko/ausfront</certPath>
                     <useColor>true</useColor>
                     <images>
